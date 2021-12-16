@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+.title{
+    text-align: center;
+    font-family: 'Corinthia', cursive;
+    font-size: 75px;
+
+    background: linear-gradient(to right, rgb(130, 228, 218) 10%, rgb(255, 0, 149) 20%, #FF0 30%, #FFF 40%, rgb(201, 255, 249) 50%);
+    background-size: 200% auto;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+canvas{
+    border: 3px solid rgb(70, 96, 180);
+    box-shadow: 1px 1px 15px rgb(153, 151, 155);
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+canvas:hover{
+    box-shadow: 1.5px 1.5px 30px rgb(138, 138, 138);
+
+}
+
+
+
+.toolbox{
+    background-color: rgb(205, 157, 221);
+    border: 1px solid blueviolet;
+    display: flex;
+    width: 800px;
+    padding: 1rem;
+    transition: all 0.5s;
+}
+.toolbox:hover{
+    box-shadow: 1.5px 1.5px 30px rgb(138, 138, 138);
+
+}
+
+.toolbox > * {
+    background-color: #ffff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child{
+    margin-left: auto;
+}
+
+
+.toolbox_mini{
+    color: rgb(57, 11, 80);
+    transition: all 0.5s;
+}
+.toolbox_mini:hover{
+    background-color: rgb(57, 11, 80);
+    color: #FFF;
+}
+
+
+@media (max-width:1100px) {
+    body{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:950px) {
+    canvas, .toolbox{
+        width: 750px;
+    }  
+}
+
+@media (max-width:880px) {
+    canvas, .toolbox{
+        width: 700px;
+    }  
+}
+
+@media (max-width:780px) {
+    body{
+        margin-top: 50px;
+    }
+    canvas, .toolbox{
+        width: 600px;
+    }  
+}
+
+@media (max-width:650px) {
+    body{
+        margin-top: 30px;
+    }
+    canvas, .toolbox{
+        width: 500px;
+    }  
+}
