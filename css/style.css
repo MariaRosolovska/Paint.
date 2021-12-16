@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 100vh;
+    height: 125vh;
 }
 .title{
     text-align: center;
@@ -113,5 +113,21 @@ canvas:hover{
     }
     canvas, .toolbox{
         width: 500px;
+    }  
+}
+@media (max-width:550px) {
+    body{
+        margin-top: 20px;
+    }
+    canvas, .toolbox{
+        width: 450px;
+    }  
+}
+@media (max-width:450px) {
+    body{
+        margin-top: 15px;
+    }
+    canvas, .toolbox{
+        width: 400px;
     }  
 }
